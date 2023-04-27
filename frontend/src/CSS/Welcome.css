@@ -1,0 +1,15 @@
+input:focus {
+    border-color: green;
+}
+  
+.home{
+    /* height: 92.5vh; */
+    /* width: 100vw; */
+    /* background : linear-gradient(to right,#e0e8f5 0%,#e2ecff  50%,#F1F9F9 50%,#F1F9F9 100%); */
+}
+  
+.home-div{
+    backdrop-filter: blur(5px);
+}
+  
+  

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+a{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.container-user{
+    font-size: 3rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* min-height:50vh; */
+    margin-bottom: 10vw;
+}
+
+.container1{
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    position: relative;
+    overflow: hidden;
+    width: 150rem;
+    height: 25em;
+    margin-bottom: 5rem;
+}
+.emp{
+    /* width:max-content; */
+    background-color: #5a4949;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 6rem;
+    width: 50rem;
+    /* height: 5vw; */
+    /* margin: 1rem; */
+    /* padding: 3rem; */
+    /* font-size: 2.3rem; */
+}
+
+.emp:hover{
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+    transition: all 0.3s;
+}
+
+.emp a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.emp a:hover{
+    color: black;
+}

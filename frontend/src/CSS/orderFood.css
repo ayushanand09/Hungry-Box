@@ -1,0 +1,43 @@
+.search{
+    width: 80rem;
+    font-size: 1.5rem;
+}
+
+.order-card{
+    display: inline-block;
+    width: 20rem;
+    height: 39rem;
+    border: 0.3rem solid #2b2e35;
+    box-shadow: 0rem 0.2rem 0.4rem black;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    border-radius: 1rem;
+    /* display: flex; */
+    /* padding: 1rem; */
+}
+
+.total{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 50rem;
+}
+
+.total:hover{ 
+    transition: all 0.5s;
+    background-color: rgba(215, 199, 55, 0.893);
+    color: black;
+    font-size: 1.8rem;
+    /* background-color: rgb(152, 58, 3); */
+}
+.btn-group:hover{
+    background-color: wheat;
+}
+.card-img-top{
+    height: 8rem;
+    width: 19rem;
+    border-radius: 5px;
+}

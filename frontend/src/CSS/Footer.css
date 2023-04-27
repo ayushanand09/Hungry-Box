@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
+.foot{
+    /* z-index: -1; */
+    background-color: black;
+    color: aliceblue;
+    /* position: absolute; */
+    /* position: sticky; */
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.foot .name{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 4rem;
+    color: gray;
+    font-family: 'Raleway', sans-serif;
+}
+.foot .address{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+.foot .contact{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+.foot .icons{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0.3rem; */
+}
+
+.icon i {
+    font-size: 1rem;
+    padding: 0rem 0.3rem;
+    border:1px solid rgb(65, 65, 65);
+    border-radius: 0.5rem;
+    color: gray;
+    cursor: pointer;
+    margin: 0.1rem;
+}
+
+.icon i:hover {
+    transition: all 0.5s;
+    color: white;
+}
