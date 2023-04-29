@@ -1,7 +1,8 @@
-import React from "react";
+import React , {useContext} from "react";
 import "../CSS/Gateway.css";
 import Navbar_After from "./Navbar_After";
 import { Link } from "react-router-dom";
+
 
 const cardNumber = () => {
   document.querySelector(".card-number-input").oninput = () => {
@@ -55,6 +56,8 @@ const cvvNotDisplay = () => {
       "perspective(1000px) rotateY(180deg)";
   };
 };
+console.log("hello")
+// console.log("allProduct Test",allProduct)
 const PaymentGateweay = () => {
   return (
     <>

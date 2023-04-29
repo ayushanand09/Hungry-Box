@@ -4,6 +4,7 @@ const ItemCard = ({ item, totalCost, setTotalCost }) => {
 
     const [stock1, setStock1] = useState(0)
     // const [stock2, setStock2] = useState(stock1)
+
     const [total,setTotal] = useState(0)
     const [currentStock, setCurrentStock] = useState(item.stock);
     // var total;
@@ -31,7 +32,7 @@ const ItemCard = ({ item, totalCost, setTotalCost }) => {
         value1++;
         // value = parseInt(document.getElementById('number').innerText); // stack val
         const obj = {
-          "stock": item.stock-value1+1
+          "stock": currentStock
         }
         // console.log("item id: ", item._id);
         // console.log("Current Stock: ", stock1-value1);
@@ -65,41 +66,53 @@ const ItemCard = ({ item, totalCost, setTotalCost }) => {
         //   body: JSON.stringify(obj)
         //   });
       }
-      const decrement = async () => {
+      const decrement = async () => 
+      {
         let value = stock1; // 10
-        console.log(stock1);
-        
-        if(value>0){
-          setStock1(--value)  // 9
-          
-          // var currentStock = item.stock - value;
-          // setCurrentStock(currentStock)
-
-          // console.log("current stock:", currentStock);
-          
+        if(stock1!=0)
+        {
+          setStock1(--value);
+          setCurrentStock(currentStock+1);
           let total = value * item.price;
           setTotal(total)
           setTotalCost(totalCost-item.price)
+
+          const obj = {
+            "stock": currentStock+1
+          }
+        //   console.log("item id: ", item._id)
+          const res = await fetch(`http://localhost:4000/api/v1/admin/product/${item._id}`, {
+            method: "PUT",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            credentials: "include",
+            body: JSON.stringify(obj) 
+            });
         }
+        console.log(stock1);
+        
+        // if(value>0){
+        //   setStock1(--value); // 9
+          
+        //   // var currentStock = item.stock - value;
+        //   // setCurrentStock(currentStock)
+
+        //   // console.log("current stock:", currentStock);
+          
+        //   let total = value * item.price;
+        //   setTotal(total)
+        //   setTotalCost(totalCost-item.price)
+        // }
 
         // var value = stock; // stock val
         // console.log("item name: ", item.name)
         // if(value > 1){
         //   value--;
-        //   const obj = {
-        //     "stock": value
-        //   }
-        //   console.log("item id: ", item._id)
-        //   const res = await fetch(`http://localhost:4000/api/v1/admin/product/${item._id}`, {
-        //     method: "PUT",
-        //     headers: {
-        //       Accept: "application/json",
-        //       "Content-Type": "application/json",
-        //     },
-        //     credentials: "include",
-        //     body: JSON.stringify(obj) 
-        //     });
-        //     setStock(value)
+         
+            
+            // setStock1(value)
     
         //   document.getElementById('number').innerText = value;
         // }

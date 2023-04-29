@@ -15,7 +15,6 @@ const DeleteItemCard = ({ item }) => {
     });
     
     alert("Product Deleted successfully");
-    // window.onload()
     window.location.reload()
   };
   return (
@@ -35,9 +34,6 @@ const DeleteItemCard = ({ item }) => {
             bulk of the card's content.
           </p>
           <div class="btn-group" role="group" aria-label="Basic example">
-            {/* <button type="button" class="btn btn-secondary" onClick={updateProduct}  style={{marginRight: "1rem", borderRadius: "1rem", color: "white"}}>
-                    Update
-                  </button> */}
             <button
               type="button"
               class="btn btn-secondary"
