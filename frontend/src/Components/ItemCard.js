@@ -1,9 +1,7 @@
 import React, {useState} from "react";
-// const global 
 const ItemCard = ({ item, totalCost, setTotalCost }) => {
 
-    const [stock1, setStock1] = useState(0)
-    // const [stock2, setStock2] = useState(stock1)
+    const [stock, setStock] = useState(0)
 
     const [total,setTotal] = useState(0)
     const [currentStock, setCurrentStock] = useState(item.stock);
@@ -11,8 +9,8 @@ const ItemCard = ({ item, totalCost, setTotalCost }) => {
     
     const increment = async () => {
 
-        let value1 = stock1;
-        setStock1(++value1)
+        let value1 = stock;
+        setStock(++value1)
         console.log("Original stock: ", item.stock);
 
         let currentStock = item.stock - value1;
@@ -23,8 +21,8 @@ const ItemCard = ({ item, totalCost, setTotalCost }) => {
         setTotal(total)
         setTotalCost(totalCost+item.price)
         
-        if(stock1 >= 1) {
-            total = stock1 * item.price;
+        if(stock >= 1) {
+            total = stock * item.price;
             console.log("Cost: ", total)
         }
 
@@ -68,10 +66,10 @@ const ItemCard = ({ item, totalCost, setTotalCost }) => {
       }
       const decrement = async () => 
       {
-        let value = stock1; // 10
-        if(stock1!=0)
+        let value = stock;
+        if(stock!=0)
         {
-          setStock1(--value);
+          setStock(--value);
           setCurrentStock(currentStock+1);
           let total = value * item.price;
           setTotal(total)
@@ -91,7 +89,7 @@ const ItemCard = ({ item, totalCost, setTotalCost }) => {
             body: JSON.stringify(obj) 
             });
         }
-        console.log(stock1);
+        console.log(stock);
         
         // if(value>0){
         //   setStock1(--value); // 9
@@ -136,7 +134,6 @@ const ItemCard = ({ item, totalCost, setTotalCost }) => {
             bulk of the card's content.
             <br />
             <h5>Price: {item.price}</h5>
-            {/* <h5>Current Stock: {item.stock}</h5> */}
             <h5>Stock Available: {currentStock}</h5>
           </p>
           <div class="btn-group" role="group" aria-label="Basic example">
@@ -149,7 +146,7 @@ const ItemCard = ({ item, totalCost, setTotalCost }) => {
             >
               -
             </button>
-            <button type="text" class="btn btn-secondary" name="quantity" maxLength="2" max="10" size="1" id="number">{stock1}
+            <button type="text" class="btn btn-secondary" name="quantity" maxLength="2" max="10" size="1" id="number">{stock}
             </button>
             <button
               type="button"

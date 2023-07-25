@@ -19,13 +19,7 @@
     justify-content: center;
     height:22rem;
     border-radius: 1rem;
-    /* display: inline-block;   */
-    /* display: inline-block;   */
 }
-
-
-
-
 
 .card:hover{
     transition: all 1s;
@@ -56,14 +50,12 @@
     outline: 0;
     display: inline-block;
     padding: 0.4rem;
-    /* margin: 1rem; */
     color: white;
     background-color: #000;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 1.3rem;
-    /* margin: 0; */
 }
 
 .button:hover {

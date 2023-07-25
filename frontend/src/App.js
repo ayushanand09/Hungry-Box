@@ -27,7 +27,6 @@ import SearchUsers from "./Components/SearchUsers";
 
 
 const App = () => {
-  // const [user, setLoginUser] = useState({})
   const UserContext = createContext();
   
   return (

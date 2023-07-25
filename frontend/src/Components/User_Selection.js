@@ -17,7 +17,6 @@ class User_Selection extends React.Component {
         </button>
         <div className="container1">
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
-            {/* Indicators */}
             <ol className="carousel-indicators">
               <li
                 data-target="#myCarousel"
@@ -26,7 +25,6 @@ class User_Selection extends React.Component {
               />
               <li data-target="#myCarousel" data-slide-to={1} />
             </ol>
-            {/* Wrapper for slides */}
             <div className="carousel-inner">
               <div className="item active">
                 <img
@@ -49,15 +47,7 @@ class User_Selection extends React.Component {
                   style={{ width: "100%" }}
                 />
               </div>
-              {/* <div className="item active">
-                <img
-                  src={require("./JIIT-Noida.jpg")}
-                  alt="IMG not available"
-                  style={{ width: "100%" }}
-                />
-              </div> */}
             </div>
-            {/* Left and right controls */}
             <a
               className="left carousel-control"
               href="#myCarousel"

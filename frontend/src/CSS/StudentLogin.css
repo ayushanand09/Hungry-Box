@@ -6,7 +6,6 @@
 }
 
 .logCard {
-	/* background: antiquewhite; */
 	margin-top: 4vw;
 	margin-bottom: 7vw;
 	display: flex;
@@ -14,8 +13,6 @@
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	/* height: 100vh; */
-	/* margin: -20px 0 50px; */
 }
 
 h1{
@@ -70,7 +67,6 @@ button:focus {
 button.ghost {
 	background-color: transparent;
 	border-color: white;
-	/* color: white; */
 }
 
 .form-signIn1{
@@ -218,9 +214,7 @@ input {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
-	/* font-family: Arial, Helvetica, sans-serif; */
 	text-decoration: none;
-	/* font-size: 2rem; */
 	color: black;
 }
 
