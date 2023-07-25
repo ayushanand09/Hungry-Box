@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 
-//Register a user
+// Register a user
 exports.registerUser = async (req,res,next) => {
     const {name, email, password, role} = req.body
 
@@ -319,18 +319,12 @@ exports.updateProfile = async (req,res,next) => {
 // Delete User -- ADMIN
 exports.deleteProfile = async (req,res,next) => {
     const user = await User.findById(req.params.id);
-
-    //We will remove cloudinary later
-
     if(!user){
         return res.status(500).json({
             success: false,
             message: "Product not found"
         })
     }
-    // if(!user){
-    //     return next(new ErrorHander(`User does not exist with Id: ${req.params.id}`),404)
-    // }
 
     await user.remove(); 
 

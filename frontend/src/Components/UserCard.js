@@ -13,9 +13,9 @@ const deleteUser = async () => {
     });
     
     alert("User Profile deleted successfully");
-    // window.onload()
     window.location.reload()
 }
+
   return (
     <>
       <div className="user-card">

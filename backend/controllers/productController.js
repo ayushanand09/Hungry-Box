@@ -112,10 +112,6 @@ exports.updateProduct = async (req,res, next) => {
 // Delete a product --> ADMIN
 exports.deleteProduct = async (req,res,next) => {
     const product = await Product.findById(req.params.id);
-    // const product = await Product.find({name: req.params.name});
-    // const productId = await Product.findById(product.id);
-    // console.log("pr: ", product);
-    // console.log("prid: ", productId);
 
     if(!product){
         return res.status(500).json({

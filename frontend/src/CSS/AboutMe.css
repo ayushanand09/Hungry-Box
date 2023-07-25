@@ -9,13 +9,11 @@
 	width: 100%;
     margin-top: 10rem;
 	min-height: 100vh;
-	/* background-color: #ddd; */
 }
 .container{
 	width: 80%;
 	display: block;
 	margin:auto;
-    /* background-color: black; */
     background-image: linear-gradient(to right, #2f2626, #4c3c3c, #5f4c4c,#c5aa6a);
 	padding-top: 100px;
 }
@@ -60,10 +58,6 @@
 	font-size: 25px;
 	letter-spacing: 1.5px;
 }
-/* .content-section .content .button a:hover{
-	background-color: #a52a2a;
-	color:#fff;
-} */
 .content-section .social{
 	margin: 40px 40px;
 }
