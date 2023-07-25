@@ -15,7 +15,7 @@ app.use(bodyParser.json({extended: true}));
 
 app.use(express.urlencoded({extended: true}));
 
-app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
+app.use(cors({credentials: true, origin: 'https://hungry-box-api.onrender.com'}));
 
 // app.get("/", (req,res)=>{
 //     res.json("Hi");
