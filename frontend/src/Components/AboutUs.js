@@ -35,7 +35,7 @@ class About extends React.Component {
               </div>
             </div>
           </div>
-          <div class="column">
+          {/* <div class="column">
             <div class="card">
               <div class="container-about">
                 Nalin Banga
@@ -76,7 +76,7 @@ class About extends React.Component {
                 <p class="title">Contributor</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="repo">
           <a className="button" href="https://github.com/ayushanand09/Hungry-Box" target="_blank">

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "build" : "nodemon --watch src/ --exec babel",
     "dev": "nodemon server.js"
   },
   "author": "",
