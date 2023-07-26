@@ -26,7 +26,7 @@ app.use(cors(
 // })
 
 app.get("/first", (req,res)=>{
-    res.json("hello");
+    res.json("Hello");
     res.cookie('jwtoken',token, {
         path: '/',
         expires: new Date(Date.now() + 5*1000),

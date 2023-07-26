@@ -5,7 +5,7 @@ const connectDatabase = require("./config/database")
 
 
 //Config
-dotenv.config({path:"backend/config/config.env"});
+dotenv.config({path:"config/config.env"});
 
 //Connecting to Database
 const username = process.env.DB_USERNAME;
