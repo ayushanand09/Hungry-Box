@@ -15,11 +15,7 @@ app.use(bodyParser.json({extended: true}));
 
 app.use(express.urlencoded({extended: true}));
 
-app.use(cors({credentials: true, origin: 'https://hungry-box-api.onrender.com'}));
-
-// app.get("/", (req,res)=>{
-//     res.json("Hi");
-// })
+app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
 
 app.get("/first", (req,res)=>{
     res.cookie('jwtoken',token, {
@@ -34,19 +30,19 @@ const port = process.env.PORT || 4000;
 
 //Routes
 const user = require("./routes/userRoutes");
-app.use("hungry-box-api.vercel.app/api/v1",user);
+app.use("/api/v1",user);
 
 const emp = require("./routes/employeeRoutes");
-app.use("hungry-box-api.vercel.app/api/v1",emp);
+app.use("/api/v1",emp);
 
 const product = require("./routes/productRoutes");
-app.use("hungry-box-api.vercel.app/api/v1",product);
+app.use("/api/v1",product);
 
 const order = require("./routes/orderRoutes");
-app.use("hungry-box-api.vercel.app/api/v1",order);
+app.use("/api/v1",order);
 
 const feedback = require("./routes/feedbackRoutes");
-app.use("hungry-box-api.vercel.app/api/v1",feedback);
+app.use("/api/v1",feedback);
 
 //Middleware for error
 app.use(errorMiddleware);

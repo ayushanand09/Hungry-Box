@@ -16,7 +16,7 @@ class About extends React.Component {
           <div className="column">
             <div className="card">
               <div className="container-about">
-                User
+                Ayush Anand
                 <a
                   className="button"
                   href="https://github.com/ayushanand09"

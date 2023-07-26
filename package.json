@@ -23,5 +23,14 @@
     "nodemon": "^2.0.20",
     "universal-cookie": "^4.0.4",
     "validator": "^13.7.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushanand09/Box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ayushanand09/Box/issues"
+  },
+  "homepage": "https://github.com/ayushanand09/Box#readme"
 }
