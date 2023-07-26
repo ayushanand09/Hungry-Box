@@ -15,8 +15,7 @@ app.use(bodyParser.json({extended: true}));
 
 app.use(express.urlencoded({extended: true}));
 
-app.use(cors(
-    {
+app.use(cors({
         origin: 'http://localhost:3000',
         methods: ["POST", "GET"],
         credentials: true
@@ -25,7 +24,7 @@ app.use(cors(
 // app.get("/", (req,res) => {
 // })
 
-app.get("/first", (req,res)=>{
+app.get("/", (req,res)=>{
     res.json("Hello");
     res.cookie('jwtoken',token, {
         path: '/',
