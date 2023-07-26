@@ -15,15 +15,23 @@ app.use(bodyParser.json({extended: true}));
 
 app.use(express.urlencoded({extended: true}));
 
-app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
+app.use(cors(
+    {
+        origin: 'http://localhost:3000',
+        methods: ["POST", "GET"],
+        credentials: true
+    }));
+
+// app.get("/", (req,res) => {
+// })
 
 app.get("/first", (req,res)=>{
+    res.json("hello");
     res.cookie('jwtoken',token, {
         path: '/',
         expires: new Date(Date.now() + 5*1000),
         httpOnly: true,
     }).send("cookie being initialized")
-    
 })
 
 const port = process.env.PORT || 4000;
